@@ -31,11 +31,16 @@ img {
   display: block;
 }
 
+section {
+padding: 120px 0;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
 
 .header-page {
   border-bottom: 1px solid #e7e9fc;
@@ -122,18 +127,14 @@ img {
   color: #404bbf;
 }
 
-.container-hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
-
 .hero {
   background: #2e2f42;
 }
+
 .hero-title {
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
-  width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -142,10 +143,12 @@ img {
   color: #fff;
 }
 .button {
+  min-width: 169px;
+  border: none;
+  background-color: #4d5ae5;
   border-radius: 4px;
   padding-top: 16px;
   padding-bottom: 16px;
-  width: 169px;
   height: 56px;
   display: block;
   margin-top: 48px;
@@ -161,9 +164,6 @@ img {
   cursor: pointer;
 }
 
-.button {
-  background-color: #4d5ae5;
-}
 .button:hover {
   background-color: #404bbf;
 }
@@ -171,19 +171,33 @@ img {
   background-color: #404bbf;
 }
 
+.advantage {
+}
+
 .advantage-container {
   width: 1128px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .advantage-list {
   display: flex;
   gap: 24px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .advantage-item {
-  width: calc((100%-72px) / 4);
+    width: calc((100% - 72px) / 4)
 }
 
 .advantage-item-title {
@@ -211,8 +225,7 @@ img {
 }
 
 .people-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+
 }
 
 .people-content {
@@ -268,8 +281,8 @@ img {
 }
 
 .container-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
 }
 
 .portfolio-content {
@@ -296,9 +309,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-}
-
-.portfolio-title {
   text-transform: capitalize;
 }
 
@@ -326,22 +336,21 @@ img {
 }
 
 .footer {
+  padding: 100px 0;
   background: #2e2f42;
-
-  .footer-container {
+.footer-container {
     display: flex;
   }
 
   .footer-container {
     padding-left: 156px;
-    padding-top: 100px;
-    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
 }
 .footer-logo {
+  margin-bottom: 16px;
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;

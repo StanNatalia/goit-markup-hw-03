@@ -175,9 +175,6 @@ padding: 120px 0;
 .advantage {
 }
 
-.advantage-container {
-  width: 1128px;
-}
 
 .visually-hidden {
     position: absolute;
@@ -332,12 +329,9 @@ border-top: none;
 .footer {
   padding: 100px 0;
   background: #2e2f42;
-.footer-container {
-    display: flex;
-  }
+  
 
-  .footer-container {
-    padding-left: 156px;
+.footer-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
